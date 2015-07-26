@@ -1,2 +1,23 @@
-# ember-aupac-control
-Decorate a bootstrap control with a label, validations and mandatory requirement.
+# Ember-aupac-control
+
+This README outlines the details of collaborating on this Ember addon.
+
+## Installation
+
+This addon is not yet ready for consumption
+
+## Running
+
+* `ember server`
+* Visit your app at http://localhost:4200.
+
+## Running Tests
+
+* `ember test`
+* `ember test --server`
+
+## Building
+
+* `ember build`
+
+For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
