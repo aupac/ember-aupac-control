@@ -1,6 +1,19 @@
-<label class="control-label">{{label}}</label>
-{{yield}}
-{{#if canShowErrors}}
-    <span class="help-block">{{helpText}}</span>
+{{#if mandatory}}<span class="text-danger">* </span>{{/if}}<label class="control-label">{{label}}</label>
+{{#if (or leftIcon rightIcon)}}
+  <div class="input-group">
+    {{#if leftIcon}}
+        <span class="input-group-addon"><i class="{{leftIcon}}"></i></span>
+    {{/if}}
+    {{yield}}
+    {{#if rightIcon}}
+        <span class="input-group-addon"><i class="{{rightIcon}}"></i></span>
+    {{/if}}
+    {{#if canShowErrors}}
+        <span class="help-block">{{helpText}}</span>
+    {{/if}}
+    <span class="form-control-feedback"><i class="{{feedbackIcon}}"></i></span>
+  </div>
+{{else}}
+  {{yield}}
+  <span class="form-control-feedback"><i class="{{feedbackIcon}}"></i></span>
 {{/if}}
-<span class="form-control-feedback"><i class="{{feedback_icon}}"></i></span>

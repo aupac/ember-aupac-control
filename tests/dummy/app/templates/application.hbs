@@ -1,3 +1,65 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<div class="container">
+    <h2 id="title">aupac-control examples</h2>
 
-{{outlet}}
+    <div class="well">
+        aupac-control allows you to decorate any other control with twitter bootstrap styling including:
+        <ol>
+            <li>Bootstrap validations messages with native support for <a href="https://github.com/dockyard/ember-validations">ember-validations</a>, however you can pass any array of errors and they will show up.</li>
+            <li>Support for input bootstrap addons styled with glyphicons or font-awesome</li>
+            <li>Mandatory field displayed using an asterisk</li>
+        </ol>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>Validated Controls <small>try entering some text</small></h3>
+        </div>
+        <div class="col-xs-4">
+          {{#aupac-control label="username" mandatory=true errors=errors.username}}
+            {{input type="text" class="form-control" value=username}}
+          {{/aupac-control}}
+            <small>By setting "mandatory=true" a red asterisk will appear</small>
+        </div>
+        <div class="col-xs-4">
+          {{#aupac-control label="age"  mandatory=validations.age.presence errors=errors.age}}
+            {{input type="number" class="form-control" value=age}}
+          {{/aupac-control}}
+        </div>
+        <div class="col-xs-4">
+          {{#aupac-control label="email" errors=errors.email canShowErrors=true}}
+            {{input type="text" class="form-control" value=email}}
+          {{/aupac-control}}
+            <small>By default errors are shown of focus out, by setting "canShowErrors=true" you can override this behaviour</small>
+        </div>
+        <div class="col-xs-12">
+            <h3>Bootstrap addons (left,right,both) <small>supports glyphicons and font-awesome</small></h3>
+        </div>
+        <div class="col-xs-4">
+          {{#aupac-control label="Search" mandatory=true leftIcon="glyphicon glyphicon-search"}}
+            {{input type="text" class="form-control"}}
+          {{/aupac-control}}
+        </div>
+        <div class="col-xs-4">
+          {{#aupac-control label="Song" mandatory=true rightIcon="glyphicon glyphicon-music"}}
+            {{input type="text" class="form-control"}}
+          {{/aupac-control}}
+        </div>
+        <div class="col-xs-4">
+          {{#aupac-control label="Search Song" mandatory=true leftIcon="glyphicon glyphicon-search" rightIcon="glyphicon glyphicon-music"}}
+            {{input type="text" class="form-control"}}
+          {{/aupac-control}}
+        </div>
+        <div class="col-xs-12">
+            <h3>You can style any html control as you like! <small>you have complete control of what is yielded into the template, this includes third party controls like datepickers etc.</small></h3>
+          {{#aupac-control label="Select Something"}}
+            <select class="form-control">
+                <option value="">Please Select</option>
+                <option value="hello">Hello</option>
+                <option value="World">World</option>
+            </select>
+          {{/aupac-control}}
+        </div>
+    </div>
+
+</div>
+
