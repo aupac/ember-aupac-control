@@ -1,10 +1,40 @@
-# Ember-aupac-control
+# ember-aupac-control
 
-This README outlines the details of collaborating on this Ember addon.
+Bootstrap control decorator with validation support.
+
+Demo [here](http://aupac.github.io/ember-aupac-control/)
 
 ## Installation
 
-This addon is not yet ready for consumption
+```
+ember install ember-aupac-control
+```
+
+## Decorate any control
+Simply wrap any control with the aupac-control wrapper to get access to:
+
+- Bootstrap validations messages with native support for [ember-validations](https://github.com/dockyard/ember-validations), however, you can pass any array of errors and they will show up.
+- Support for input bootstrap addons styled with glyphicons or font-awesome
+- Mandatory field displayed using an asterisk
+
+## Usage
+
+```html
+  {{#aupac-control label="age"  mandatory=true errors=errors.age}}
+     {{!-- Inside the control block use any control you like --}}
+    {{input type="number" class="form-control" value=age}}
+  {{/aupac-control}}
+```
+
+## Parameters
+
+-  `errors` : (array: default []) an array of error for the control, only the first error will be shown to the user at any time.
+-  `mandatory` : (boolean: default false) if true will add an asterisk before the label
+-  `label` : (string: default '') label to show above the control
+-  `feedbackErrorIcon`: (string: default 'glyphicon glyphicon-remove') icon to display when a control is in error
+-  `leftIcon`: (string: default '') classes to be placed to the left of the control
+-  `rightIcon`: (string: default '') classes to be placed to the right of the control
+-  `canShowErrors`: (boolean: default false) if set to true with show errors on page load
 
 ## Running
 
