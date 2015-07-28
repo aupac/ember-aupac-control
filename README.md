@@ -23,7 +23,7 @@ Simply wrap any control with the aupac-control wrapper to get access to:
 
 ```html
   {{#aupac-control label="age"  mandatory=true errors=errors.age}}
-     {{!-- Inside the control block use any control you like --}}
+    {{!-- Inside the component block use any control you like --}}
     {{input type="number" class="form-control" value=age}}
   {{/aupac-control}}
   
