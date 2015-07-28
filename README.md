@@ -2,6 +2,8 @@
 
 Bootstrap control decorator with validation support.
 
+![alt tag](https://github.com/aupac/ember-aupac-control/blob/master/example.jpg)
+
 Demo [here](http://aupac.github.io/ember-aupac-control/)
 
 ## Installation
