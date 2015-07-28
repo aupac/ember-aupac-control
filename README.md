@@ -26,6 +26,8 @@ Simply wrap any control with the aupac-control wrapper to get access to:
      {{!-- Inside the control block use any control you like --}}
     {{input type="number" class="form-control" value=age}}
   {{/aupac-control}}
+  
+  * Note - errors.age is where ember-validation stores it's validation array for age.
 ```
 
 ## Parameters
