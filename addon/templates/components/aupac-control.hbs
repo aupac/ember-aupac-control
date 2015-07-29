@@ -15,5 +15,8 @@
   </div>
 {{else}}
   {{yield}}
+  {{#if canShowErrors}}
+      <span class="help-block">{{helpText}}</span>
+  {{/if}}
   <span class="form-control-feedback"><i class="{{feedbackIcon}}"></i></span>
 {{/if}}
