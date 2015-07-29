@@ -1,6 +1,6 @@
 {
   "name": "ember-aupac-control",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bootstrap html control decorator with validation support.",
   "directories": {
     "doc": "doc",

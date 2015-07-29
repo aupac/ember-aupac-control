@@ -65,7 +65,7 @@ export default Ember.Component.extend({
     if (!this.get('canShowFeedback')) {
       return;
     }
-    console.log(this.get('status'))
+
     switch (this.get('status')) {
       case 'success':
         return ''; //this.get('feedbackSuccessIcon');
