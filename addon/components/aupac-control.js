@@ -21,6 +21,7 @@ export default Ember.Component.extend({
   tagName: 'div',
   classNames : ['form-group', 'has-feedback'],
   classNameBindings: ['hasSuccess', 'hasWarning', 'hasError'],
+  hasIcon : computed.or('leftIcon', 'rightIcon'),
 
   init: function() {
     this._super.apply(this, arguments);

@@ -1,5 +1,5 @@
 {{#if mandatory}}<span class="text-danger">* </span>{{/if}}<label class="control-label">{{label}}</label>
-{{#if (or leftIcon rightIcon)}}
+{{#if hasIcon}}
   <div class="input-group">
     {{#if leftIcon}}
         <span class="input-group-addon"><i class="{{leftIcon}}"></i></span>
