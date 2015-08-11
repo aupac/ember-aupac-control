@@ -8,11 +8,11 @@
     {{#if rightIcon}}
         <span class="input-group-addon"><i class="{{rightIcon}}"></i></span>
     {{/if}}
-    {{#if canShowErrors}}
-        <span class="help-block">{{helpText}}</span>
-    {{/if}}
     <span class="form-control-feedback"><i class="{{feedbackIcon}}"></i></span>
   </div>
+  {{#if canShowErrors}}
+      <span class="help-block">{{helpText}}</span>
+  {{/if}}
 {{else}}
   {{yield}}
   {{#if canShowErrors}}
