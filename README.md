@@ -14,7 +14,7 @@ ember install ember-aupac-control
 
 * Make sure you have [Bootstrap CSS](http://getbootstrap.com/) installed in your application.
 
-This can be achieved by `bower install bootstrap --save-dev`.  Then update your Brocfile.js/ember-cli-build.js file and add the following.
+This can be achieved by `bower install bootstrap --save-dev`.  Then update your `Brocfile.js or ember-cli-build.js` file and add the following.
 
 ```javascript
 //Bootstrap
