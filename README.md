@@ -12,6 +12,8 @@ Demo [here](http://aupac.github.io/ember-aupac-control/)
 ember install ember-aupac-control
 ```
 
+* Make sure you have [Bootstrap CSS](http://getbootstrap.com/) installed in your application.
+
 ## Decorate any control
 Simply wrap any control with the aupac-control wrapper to get access to:
 
