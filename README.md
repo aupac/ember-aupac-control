@@ -16,7 +16,7 @@ ember install ember-aupac-control
 
 This can be achieved by `bower install bootstrap --save-dev`.  Then update your Brocfile.js/ember-cli-build.js file and add the following.
 
-```
+```javascript
 //Bootstrap
 app.import('bower_components/bootstrap/dist/css/bootstrap.css');
 app.import('bower_components/bootstrap/dist/css/bootstrap.css.map', {
