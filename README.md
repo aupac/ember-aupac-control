@@ -14,6 +14,30 @@ ember install ember-aupac-control
 
 * Make sure you have [Bootstrap CSS](http://getbootstrap.com/) installed in your application.
 
+This can be achieved by `bower install bootstrap --save-dev`.  Then update your Brocfile.js/ember-cli-build.js file and add the following.
+
+```
+//Bootstrap
+app.import('bower_components/bootstrap/dist/css/bootstrap.css');
+app.import('bower_components/bootstrap/dist/css/bootstrap.css.map', {
+  destDir: 'assets'
+});
+app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot', {
+  destDir: 'fonts'
+});
+app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf', {
+  destDir: 'fonts'
+});
+app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg', {
+  destDir: 'fonts'
+});
+app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff', {
+  destDir: 'fonts'
+});
+app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2', {
+  destDir: 'fonts'
+});
+```
 ## Decorate any control
 Simply wrap any control with the aupac-control wrapper to get access to:
 
