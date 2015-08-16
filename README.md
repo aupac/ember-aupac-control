@@ -1,5 +1,7 @@
 # ember-aupac-control
 
+[![NPM package](https://img.shields.io/npm/v/ember-aupac-control.svg)](https://www.npmjs.com/package/ember-aupac-control) [![Build Status](https://img.shields.io/travis/aupac/ember-aupac-control.svg)](https://travis-ci.org/aupac/ember-aupac-control) [![Ember Observer Score](http://emberobserver.com/badges/ember-aupac-control.svg)](http://emberobserver.com/addons/ember-aupac-control)
+
 Bootstrap control decorator with validation support.
 
 ![alt tag](https://github.com/aupac/ember-aupac-control/blob/master/example.jpg)
