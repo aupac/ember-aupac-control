@@ -43,7 +43,7 @@ app.import('node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2
 ## Decorate any control
 Simply wrap any control with the aupac-control wrapper to get access to:
 
-- Bootstrap validations messages with native support for [ember-validations](https://github.com/dockyard/ember-validations), however, you can pass any array of errors and they will show up.
+- Bootstrap validations messages. You can pass an array of errors and they will show up.
 - Support for input bootstrap addons styled with glyphicons or font-awesome
 - Mandatory field displayed using an asterisk
 
