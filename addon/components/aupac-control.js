@@ -1,9 +1,9 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import { computed } from '@ember/object';
+import { isNone } from '@ember/utils';
 import layout from '../templates/components/aupac-control';
 
-const {computed} = Ember;
-
-export default Ember.Component.extend({
+export default Component.extend({
   layout: layout,
 
   //Public API
@@ -23,11 +23,11 @@ export default Ember.Component.extend({
   classNameBindings: ['hasSuccess', 'hasWarning', 'hasError'],
   hasIcon : computed.or('leftIcon', 'rightIcon'),
 
-  init: function() {
-    this._super.apply(this, arguments);
+  init() {
+    this._super(...arguments);
 
     const errors = this.get('errors');
-    if(Ember.isNone(errors)) {
+    if(isNone(errors)) {
       this.set('errors', []);
     }
   },
@@ -90,8 +90,8 @@ export default Ember.Component.extend({
   /*
    Listen to the focus out of the form group and display the errors
    */
-  canShowFeedback: Ember.computed.and('canShowErrors'), //, 'errors.length'
-  focusOut: function() {
+  canShowFeedback: computed.and('canShowErrors'), //, 'errors.length'
+  focusOut() {
     return this.set('canShowErrors', true);
   }
 });
